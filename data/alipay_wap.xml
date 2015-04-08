@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record id="payment_acquirer_alipay_wap" model="payment.acquirer">
+            <field name="name">AlipayWap</field>
+            <field name="provider">alipay_wap</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="view_template_id" ref="alipay_wap_acquirer_button"/> 
+            <field name="environment">test</field>
+            <field name="pre_msg"><![CDATA[
+<p>You will be redirected to the alipay website after clicking on the payment button.</p>]]></field>
+            <field name="alipay_wap_pid">dummy</field>
+            <field name="alipay_wap_key">dummy</field>
+            <field name="alipay_wap_seller_email">dummy</field>
+        </record>
+
+    </data>
+</openerp>
